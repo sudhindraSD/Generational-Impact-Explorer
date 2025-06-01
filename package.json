@@ -1,0 +1,23 @@
+{
+  "name": "dbmsproject",
+  "version": "1.0.0",
+  "description": "A web application to explore and compare generational trends",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "generations",
+    "data",
+    "mysql",
+    "express"
+  ],
+  "author": "Sudhindra.S.D",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  }
+}

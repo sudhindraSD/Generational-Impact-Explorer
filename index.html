@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generational Impact Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      section {
+        display: none;
+      }
+
+      section.active {
+        display: block;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home" data-section="home">Home</a></li>
+        <li>
+          <a href="#generations" data-section="generations">Generations</a>
+        </li>
+        <li><a href="#compare" data-section="compare">Compare</a></li>
+        <li><a href="#about" data-section="about">About</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="active">
+      <h1>Generational Impact Explorer</h1>
+      <p>
+        Explore the differences between generations in terms of income,
+        education, and technology adoption.
+      </p>
+      <p>
+        This tool allows you to compare various aspects of different
+        generations, providing insights into how societal trends have evolved
+        over time.
+      </p>
+      <p>
+        Use the navigation menu to explore detailed data about generations or
+        compare them side by side to uncover interesting patterns and trends.
+      </p>
+    </section>
+    <section id="generations">
+      <h2>Generations Data</h2>
+      <div id="generations-list"></div>
+    </section>
+    <section id="compare">
+      <h2>Compare Generations</h2>
+      <div class="compareDiv">
+        <label for="selectFrom">Select:</label>
+        <select id="selectFrom" title="Select">
+          <option value="" disabled selected>Select a generation</option>
+          <option value="babyBoomers">Baby-Boomers</option>
+          <option value="genX">Gen-x</option>
+          <option value="millenials">Millenails</option>
+          <option value="genZ">Gen-Z</option>
+        </select>
+        <label for="selectTo">Select:</label>
+        <select id="selectTo" title="Select">
+          <option value="" disabled selected>Select a generation</option>
+          <option value="babyBoomers">Baby-Boomers</option>
+          <option value="genX">Gen-x</option>
+          <option value="millenials">Millenails</option>
+          <option value="genZ">Gen-Z</option>
+        </select>
+        <label for="compareValues"> Compare Fields:</label>
+        <select id="compareValues">
+          <option value="" disabled selected>Select a parameter</option>
+          <option value="income">Income</option>
+          <option value="education">Education</option>
+          <option value="tech">Tech</option>
+          <option value="socialmedia">Social Media</option>
+          <option value="environmentalawareness">
+            Environmental Awareness
+          </option>
+        </select>
+        <button id="compare">Compare</button>
+      </div>
+      <div id="comparison-result">
+        <!-- JS fills this with comparison -->
+      </div>
+    </section>
+    <section id="about">
+      <h2>About This Project</h2>
+      <p>
+        This project demonstrates how SQL databases can be used to analyze and
+        compare generational trends in society.It combines a user-friendly
+        frontend with a powerful backend to deliver meaningful insights.
+      </p>
+      <p>
+        The data used in this project includes key metrics such as average
+        income, education levels, technology adoption scores, social media
+        usage, and environmental awareness. These metrics provide a
+        comprehensive view of how different generations have shaped and been
+        shaped by societal changes.
+      </p>
+      <p>
+        The project is built using modern web technologies, including HTML, CSS,
+        JavaScript, Node.js, and MySQL. It serves as a practical example of how
+        data can be visualized and compared to drive better understanding and
+        decision-making.
+      </p>
+    </section>
+  </body>
+</html>
