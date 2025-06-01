@@ -48,7 +48,7 @@ Before running this application, make sure you have the following installed:
        host: "localhost",
        user: "your_mysql_username",
        password: "your_mysql_password",
-       database: "generations_db",
+       database: "generations_database",
      });
      ```
 
